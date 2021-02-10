@@ -8,7 +8,7 @@ By using the core styling and this plugin you're basically left with minor adjus
 
 ## Installation:
 
-npm install github:kenyon-digital/tailwindcss-gutenberg --save-dev
+```npm install github:kenyon-digital/tailwindcss-gutenberg --save-dev```
 
 ### Features:
 
