@@ -1,13 +1,13 @@
-module.exports = ({ addUtilities, theme, e }) => {
+module.exports = ({ addComponents, theme, e }) => {
   const colors = theme('gutenberg.colors', {});
-  const utilities = {};
+  const components = {};
 
   for (let [slug, color] of Object.entries(colors)) {
-    utilities[`.${e(`has-${slug}-background-color`)}`] = { 'background-color': color };
-    utilities[`.${e(`has-${slug}-color`)}`] = { color: color };
+    components[`.${e(`has-${slug}-background-color`)}`] = { 'background-color': color };
+    components[`.${e(`has-${slug}-color`)}`] = { color: color };
   }
 
-  addUtilities(utilities, {
+  addComponents(components, {
     respectPrefix: false,
     respectImportant: true,
   });
